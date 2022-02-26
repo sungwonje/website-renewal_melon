@@ -561,7 +561,7 @@ html > body .scrollbar-thumb {
   padding: 2rem;
   transition: visibility 0.5s, opacity 0.5s;
 }
-#artist-recommend .swiper-slide:hover .album-info {
+#artist-recommend .swiper-slide.swiper-slide-active:hover .album-info {
   visibility: visible;
   opacity: 1;
 }
@@ -580,7 +580,7 @@ html > body .scrollbar-thumb {
   border: 3px solid #fff;
   border-radius: 50%;
 }
-#artist-recommend .swiper-slide .album-info .play:hover {
+#artist-recommend .swiper-slide.swiper-slide-active .album-info .play:hover {
   border-color: #00d344;
   color: #00d344;
 }
@@ -588,10 +588,11 @@ html > body .scrollbar-thumb {
   font-size: 1.8rem;
   margin-left: 2rem;
 }
-#artist-recommend .swiper-slide .album-info .more:hover {
+#artist-recommend .swiper-slide.swiper-slide-active .album-info .more:hover {
   color: #00d344;
 }
 #artist-recommend .swiper-slide .info {
+  display: none;
   position: absolute;
   bottom: -40%;
   left: 50%;
@@ -599,6 +600,8 @@ html > body .scrollbar-thumb {
   text-align: center;
   width: 350px;
 }
+#artist-recommend .swiper-slide.swiper-slide-active .info {
+  display: block;
 #artist-recommend .swiper-slide .info > p:nth-child(1) {
   color: #fff;
   font-size: 1.5rem;
