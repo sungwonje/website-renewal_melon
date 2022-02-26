@@ -1,0 +1,413 @@
+/* Web-Fonts */
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html > body {
+  font-family: 'GmarketSansMedium';
+  height: 100vh;
+}
+
+
+/* Custom Lib */
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  --y-gap: 20px;
+  --x-gap: 20px;
+  --cc: 2;
+  gap: var(--y-gap) var(--x-gap);
+}
+.flex-grid > * {
+  width: calc(100% / var(--cc) - (var(--x-gap) * (var(--cc) - 1)) / var(--cc));
+}
+
+/* Custom */
+#fp-nav ul li a.active span {
+  background: #00d344;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+:root {
+  --page-width: 1920px;
+}
+
+/* 로딩 */
+#loading {
+  position:relative;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:white;
+  z-index:1000;
+}
+#loading .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: loading-move 3s infinite;
+}
+@keyframes loading-move {
+  0% {top: 48%;}
+  50% {top: 52%;}
+  100% {top: 48%;}
+}
+#loading .box p {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00d344;
+}
+
+/* 오프닝 */
+#fullpage #opening {
+  position: relative;
+  width: var(--page-width);
+  background-image: url(https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/intro-page/opening_bg-img-brighter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#fullpage #opening .wrap {
+  background: rgba(0,0,0,0.2);
+}
+#fullpage #opening .text img.feel-good-music {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  min-width: 1400px;
+}
+#fullpage #opening .text img.sub-text {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+}
+#fullpage #opening .text img.top-text {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+#fullpage #opening .scroll-down img {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: mymove 2s infinite;
+}
+@keyframes mymove {
+  0% {bottom: 25px;}
+  50% {bottom: 35px;}
+  100% {bottom: 25px;}
+}
+
+/* HOT NEW ALBUM */
+#fullpage #hot-new-album {
+  position: relative;
+  width: var(--page-width);
+  background-image: url(https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/intro-page/intro_hot-new-album_bg-img02.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#fullpage #hot-new-album .wrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+#fullpage #hot-new-album .text {
+  position: absolute;
+  top: 13%;
+  right: 5%;
+  z-index: 10;
+}
+#fullpage #hot-new-album .text img {
+  min-width: 800px;
+}
+#fullpage #hot-new-album .album-img img.bts {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  width: 300px;
+}
+#fullpage #hot-new-album .album-img img.epik-high {
+  position: absolute;
+  top: 18%;
+  left: 26%;
+  width: 240px;
+}
+#fullpage #hot-new-album .album-img img.ariana-grande {
+  position: absolute;
+  bottom: 18%;
+  left: 9%;
+  width: 220px;
+  z-index: -1;
+}
+#fullpage #hot-new-album .album-img img.bewhy {
+  position: absolute;
+  bottom: 25%;
+  left: 17%;
+  width: 270px;
+}
+#fullpage #hot-new-album .album-img img.taeyeon {
+  position: absolute;
+  top: 47%;
+  left: 33%;
+  width: 400px;
+}
+#fullpage #hot-new-album .album-img img.paul-kim {
+  position: absolute;
+  bottom: 18%;
+  left: 60%;
+  width: 240px;
+}
+#fullpage #hot-new-album .album-img img.kelly-clarkson {
+  position: absolute;
+  bottom: 10%;
+  left: 74%;
+  width: 300px;
+}
+#fullpage #hot-new-album .scroll-down img {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: mymove 2s infinite;
+}
+@keyframes mymove {
+  0% {bottom: 25px;}
+  50% {bottom: 35px;}
+  100% {bottom: 25px;}
+}
+
+/* 이런 아티스트는 어때요? */
+#fullpage #artist-recommend {
+  position: relative;
+  width: var(--page-width);
+  background: url(https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/intro-page/intro_artist-recommend_bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -20;
+}
+#fullpage #artist-recommend .wrap {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+#fullpage #artist-recommend .text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+#fullpage #artist-recommend .text img {
+  min-width: 800px;
+}
+/* Infinite Loop */
+:root {
+  --site-width:1920px;
+}
+body {
+  width:var(--site-width);
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media ( min-width:1900px ) {
+  body {
+    overflow-x:hidden;
+  }
+}
+:root {
+  --box-1--view-width:var(--site-width);
+  --box-1--total-items-count:9;
+  --box-1--view-items-count:8;
+  --box-1--item-width:calc(var(--box-1--view-width) / var(--box-1--view-items-count));
+}
+.infinite-loop {
+  position: absolute;
+  bottom: 15%;
+}
+.box-1 {
+  width:var(--box-1--view-width);
+  margin-left:auto;
+  margin-right:auto;
+}
+.box-1 > ul {
+  animation-name: ani-1;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change:transform;
+}
+
+.box-1 > ul > li {
+  width:var(--box-1--item-width);
+  padding-left:20px;
+  padding-right:20px;
+  flex-shrink:0;
+}
+
+.box-1 > ul > li > img {
+  display:block;
+  width:100%;
+}
+
+@keyframes ani-1 {
+  0% {
+    transform:translateX(0);
+  }
+  
+  100% {
+    transform:translateX(calc(var(--box-1--item-width) * var(--box-1--total-items-count) * -1));
+  }
+}
+#fullpage #artist-recommend .scroll-down img {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: mymove 2s infinite;
+}
+@keyframes mymove {
+  0% {bottom: 25px;}
+  50% {bottom: 35px;}
+  100% {bottom: 25px;}
+}
+
+/* 한 눈에 보는 트렌드 */
+#fullpage #trend-at-once {
+  position: relative;
+  width: var(--page-width);
+  background: url(https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/intro-page/intro_trend-at-once_bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -20;
+}
+#fullpage #trend-at-once .text {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+#fullpage #trend-at-once .text img {
+  min-width: 800px;
+}
+#fullpage #trend-at-once .mockup img:nth-child(1) {
+  position: absolute;
+  top: 17%;
+  right: 25%;
+}
+#fullpage #trend-at-once .mockup img:nth-child(2) {
+  position: absolute;
+  top: 33%;
+  right: 10%;
+}
+#fullpage #trend-at-once .scroll-down img {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: mymove 2s infinite;
+}
+@keyframes mymove {
+  0% {bottom: 25px;}
+  50% {bottom: 35px;}
+  100% {bottom: 25px;}
+}
+
+/* 아티스트의 음악방송 */
+#fullpage #artist-playlist {
+  position: relative;
+  width: var(--page-width);
+  background: url(https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/intro-page/intro_artist-playlist_bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#fullpage #artist-playlist .text {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  z-index: 10;
+}
+#fullpage #artist-playlist .text img {
+  min-width: 800px;
+}
+#fullpage #artist-playlist .dj-img img {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+}
+#fullpage #artist-playlist .scroll-down img {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: mymove 2s infinite;
+}
+@keyframes mymove {
+  0% {bottom: 25px;}
+  50% {bottom: 35px;}
+  100% {bottom: 25px;}
+}
+
+/* 엔딩 */
+#fullpage #ending {
+  width: var(--page-width);  
+  position: relative;
+}
+#fullpage #ending video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+#fullpage #ending .wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  border: 0px solid #fff;
+  transition: border-width 1s;
+}
+#fullpage #ending:hover .wrap {
+  border-width: 50px;
+}
+#fullpage #ending .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+#fullpage #ending .text p {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+}
+#fullpage #ending .text a {
+  display: inline-block;
+  color: #00d344;
+  background-color: #fff;
+  padding: 2rem 4rem;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 4rem;
+}

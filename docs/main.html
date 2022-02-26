@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가시안이며 비상업적 취업지원 포트폴리오 용도로만 사용됩니다.</title>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Tailwind -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Swiper Demos -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+
+    <!-- Images Loaded -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Masonry -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+    <!-- 페이지 CSS 작업 -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- 페이지 JS 작업 -->
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- 로딩 -->
+    <div id="loading">
+      <div class="box">
+        <p>로딩중...</p>
+      </div>
+    </div>
+    <!-- 메인 페이지 -->
+    <section id="main-page">
+      <!-- 좌측 메뉴 -->
+      <section id="left-menu">
+        <div class="wrap">
+          <a href="#" class="logo">
+            <img
+              src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/left-menu/left-menu_logo_melon.png"
+              alt=""
+            />
+          </a>
+          <nav class="menu">
+            <ul>
+              <li>
+                <span><i class="fa-solid fa-chart-column"></i></span>
+                <span>멜론 차트</span>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-music"></i></span>
+                <span>최신 음악</span>
+              </li>
+              <li>
+                <span><i class="fa-brands fa-elementor"></i></span>
+                <span>장르 음악</span>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-compact-disc"></i></span>
+                <span>멜론 DJ</span>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-book"></i></span>
+                <span>매거진</span>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-trophy"></i></span>
+                <span>뮤직 어워드</span>
+              </li>
+            </ul>
+          </nav>
+          <nav class="my-playlist">
+            <ul>
+              <li>My Playlist</li>
+              <li>최근 들은 곡</li>
+              <li>가장 많이 들은 곡</li>
+              <li>구매한 음악</li>
+              <li>좋아한 음악</li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- 탑 메뉴 -->
+      <section id="top-menu">
+        <div class="bd-filter">
+          <div class="wrap flex items-center">
+            <input
+              type="text"
+              class="search-box"
+              placeholder="검색어를 입력하세요."
+            />
+            <div class="search-ranking flex items-center ml-8">
+              <span>급상승</span>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <p>1. 방탄소년단</p>
+                    <p style="color: #00d344">
+                      <span class="font-bold mr-1"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      <span class="font-bold">1</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>2. 블랙핑크</p>
+                    <p style="color: red">
+                      <span class="font-bold mr-1"
+                        ><i class="fas fa-arrow-down"></i
+                      ></span>
+                      <span class="font-bold">2</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>3. 이문세</p>
+                    <p style="color: #00d344">
+                      <span class="font-bold mr-1"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      <span class="font-bold">2</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>4. 빈지노</p>
+                    <p style="color: #00d344">
+                      <span class="font-bold mr-1"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      <span class="font-bold">2</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>5. Butter</p>
+                    <p style="color: red">
+                      <span class="font-bold mr-1"
+                        ><i class="fas fa-arrow-down"></i
+                      ></span>
+                      <span class="font-bold">3</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>6. 빈지노</p>
+                    <p style="color: #00d344">
+                      <span class="font-bold mr-1"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      <span class="font-bold">6</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>7. 트와이스</p>
+                    <p style="color: red">
+                      <span class="font-bold mr-1"
+                        ><i class="fas fa-arrow-down"></i
+                      ></span>
+                      <span class="font-bold">1</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>8. 유희열</p>
+                    <p style="color: #00d344">
+                      <span class="font-bold mr-1"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      <span class="font-bold">5</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>9. 샘김</p>
+                    <p style="color: #00d344">
+                      <span class="font-bold mr-1"
+                        ><i class="fas fa-arrow-up"></i
+                      ></span>
+                      <span class="font-bold">9</span>
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>10. 적재</p>
+                    <p style="color: red">
+                      <span class="font-bold mr-1"
+                        ><i class="fas fa-arrow-down"></i
+                      ></span>
+                      <span class="font-bold">1</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-grow"></div>
+            <div class="right-icons flex items-center">
+              <span><i class="far fa-bell"></i></span>
+              <span><i class="fas fa-cog"></i></span>
+              <div class="profile flex items-center">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/top-menu/top-menu_icon_profile.png"
+                  alt=""
+                />
+                <div class="text">
+                  <p style="font-size: 1.1rem; color: #fff; cursor: pointer">
+                    성원제님
+                  </p>
+                  <p style="color: #ccc; cursor: pointer">armycrrt@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="main-contents">
+        <!-- HOT NEW ALBUM -->
+        <section id="hot-new-album">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bts">
+                <div class="list">
+                  <div class="wrap">
+                    <div class="left-text">
+                      <p class="title">HOT NEW ALBUM</p>
+                      <div class="album-title">
+                        <p>Butter</p>
+                        <button class="play-now">지금 바로 듣기</button>
+                      </div>
+                      <div class="info">
+                        <p class="artist">Artist</p>
+                        <p class="artist-name">BTS (방탄소년단)</p>
+                        <p class="explain">
+                          방탄소년단의 서머송, 새 디지털 싱글 [Butter] <br />
+                          <br />
+                          청량한 댄스 팝 [Butter], 마음을 흔드는 방탄소년단의
+                          귀여운 고백 <br />
+                          버터처럼 부드럽게 스며드는 방탄소년단의 독보적인 매력!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide taeyeon">
+                <div class="list">
+                  <div class="wrap">
+                    <div class="left-text">
+                      <p class="title">HOT NEW ALBUM</p>
+                      <div class="album-title">
+                        <p>INVU - The 3rd Album</p>
+                        <button class="play-now">지금 바로 듣기</button>
+                      </div>
+                      <div class="info">
+                        <p class="artist">Artist</p>
+                        <p class="artist-name">태연 (TAEYEON)</p>
+                        <p class="explain">
+                          ‘믿고 듣는 보컬퀸’ 태연, 정규 3집 ‘INVU’ 발매! <br />
+                          태연이 들려주는 다양한 사랑 이야기! 한층 성숙해진 음악
+                          세계 예고! <br />
+                          <br />
+                          ‘믿고 듣는 보컬퀸’ 태연이 정규 3집 ‘INVU’를 발매했다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide b-to-b">
+                <div class="list">
+                  <div class="wrap">
+                    <div class="left-text">
+                      <p class="title">HOT NEW ALBUM</p>
+                      <div class="album-title">
+                        <p>Be Together</p>
+                        <button class="play-now">지금 바로 듣기</button>
+                      </div>
+                      <div class="info">
+                        <p class="artist">Artist</p>
+                        <p class="artist-name">비투비</p>
+                        <p class="explain">
+                          4년 만에 완전체로 돌아온 비투비! 2막을 여는 그들이
+                          보여줄 ‘푸른 사랑’ 정규 3집 [Be Together] <br />
+                          <br />
+                          4년 만에 완전체로 돌아온 비투비가 세 번째 정규 앨범
+                          [Be Together]를 발매한다. <br />
+                          올해로 데뷔 10주년, Well-Made 음악으로 대중의 마음을
+                          사로잡아온 이들은 가장 ‘비투비스러운’ 음악과 함께
+                          눈부신 2막을 펼친다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide twice">
+                <div class="list">
+                  <div class="wrap">
+                    <div class="left-text">
+                      <p class="title">HOT NEW ALBUM</p>
+                      <div class="album-title">
+                        <p>The Feels</p>
+                        <button class="play-now">지금 바로 듣기</button>
+                      </div>
+                      <div class="info">
+                        <p class="artist">Artist</p>
+                        <p class="artist-name">트와이스 (Twice)</p>
+                        <p class="explain">
+                          ‘K팝 대표 걸그룹’ 트와이스, 2022년 2월 4일 첫 영어
+                          싱글 리믹스 버전 ‘The Feels (Benny Benassi Remix)’
+                          발매! <br />
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 최신 앨범 -->
+        <section id="recent-album" class="mt-20">
+          <div class="wrap">
+            <div class="top flex mb-10">
+              <div class="title flex items-center text-white cursor-pointer">
+                <span class="text-4xl font-bold mr-3">최신 앨범</span>
+                <span class="text-2xl"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </div>
+              <div class="genre flex items-center ml-20">
+                <button class="all mr-4 pressed">전체</button>
+                <button class="k-pop mr-4">가요</button>
+                <button class="pop">POP</button>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide flex-col">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/recent-album/recent-album_-chan-ran.jpg"
+                      alt=""
+                    />
+                    <p class="title">숨결</p>
+                    <p class="artist">CHAN RAN (찬란)</p>
+                  </div>
+                  <div class="swiper-slide flex-col">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/recent-album/recent-album_able.jpg"
+                      alt=""
+                    />
+                    <p class="title">널 만나러 가는 길</p>
+                    <p class="artist">에이블 (Able)</p>
+                  </div>
+                  <div class="swiper-slide flex-col">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/recent-album/recent-album_willyk.jpg"
+                      alt=""
+                    />
+                    <p class="title">Fade Away</p>
+                    <p class="artist">윌리K</p>
+                  </div>
+                  <div class="swiper-slide flex-col">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/recent-album/recent-album_giant.jpg"
+                      alt=""
+                    />
+                    <p class="title">Giant (자이언트)</p>
+                    <p class="artist">P!nUp (핀업)</p>
+                  </div>
+                  <div class="swiper-slide flex-col">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/recent-album/recent-album_gil-byeong-min.jpg"
+                      alt=""
+                    />
+                    <p class="title">The Road of Classics</p>
+                    <p class="artist">길병민</p>
+                  </div>
+                  <div class="swiper-slide flex-col">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/recent-album/recent-album_baek-a-yeon.jpg"
+                      alt=""
+                    />
+                    <p class="title">엘소드 OST : 물들이다 (Stained)</p>
+                    <p class="artist">백아연</p>
+                  </div>
+                  <div class="swiper-slide flex-col">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/recent-album/recent-album_jtong.jpg"
+                      alt=""
+                    />
+                    <p class="title">이정훈</p>
+                    <p class="artist">제이통 (J-Tong)</p>
+                  </div>
+                  <div class="swiper-slide flex-col">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/recent-album/recent-album_mc-sniper.jpg"
+                      alt=""
+                    />
+                    <p class="title">Love Burnout</p>
+                    <p class="artist">MC 스나이퍼 (MC Sniper)</p>
+                  </div>
+                  <div class="swiper-slide flex-col">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/recent-album/recent-album_phil-yoon.jpg"
+                      alt=""
+                    />
+                    <p class="title">Pray On A Rope</p>
+                    <p class="artist">필 윤 (Phil Yoon)</p>
+                  </div>
+                  <div class="swiper-slide flex-col">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/recent-album/recent-album_rosy.jpg"
+                      alt=""
+                    />
+                    <p class="title">JK</p>
+                    <p class="artist">Rosy (로지)</p>
+                  </div>
+                  <div class="swiper-slide flex-col">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/recent-album/recent-album_superb.jpg"
+                      alt=""
+                    />
+                    <p class="title">pushin B</p>
+                    <p class="artist">수퍼비 (SUPERBEE)</p>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 멜론차트 & 멜론TV -->
+        <section id="melon-chart-and-melon-tv">
+          <div class="wrap flex justify-between">
+            <section id="melon-chart" class="mt-20">
+              <div class="top flex mb-10">
+                <div class="title flex items-center text-white cursor-pointer">
+                  <span class="text-4xl font-bold mr-3">멜론 차트</span>
+                  <span class="text-2xl"
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></span>
+                </div>
+                <div class="genre flex items-center ml-20">
+                  <button class="k-pop mr-4 pressed">가요</button>
+                  <button class="pop">POP</button>
+                </div>
+              </div>
+              <div class="contents">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="list">
+                        <p class="number">01</p>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/melon-chart/korea/melon-chart_korea01.jpg"
+                          alt=""
+                        />
+                        <div class="contents">
+                          <p class="rank" style="color: #00d344">
+                            <span><i class="fa-solid fa-arrow-up"></i></span>
+                            <span>+5</span>
+                          </p>
+                          <p class="music-name">INVU</p>
+                          <p class="artist">태연 (TAEYEON)</p>
+                        </div>
+                        <p class="running-time">3:45</p>
+                        <p class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </p>
+                        <p class="like">
+                          <i class="fa-solid fa-heart"></i>
+                        </p>
+                      </div>
+                      <div class="list">
+                        <p class="number">02</p>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/melon-chart/korea/melon-chart_korea02.jpg"
+                          alt=""
+                        />
+                        <div class="contents">
+                          <p class="rank" style="color: red">
+                            <span><i class="fa-solid fa-arrow-down"></i></span>
+                            <span>-1</span>
+                          </p>
+                          <p class="music-name">취중고백</p>
+                          <p class="artist">김민석 (멜로망스)</p>
+                        </div>
+                        <p class="running-time">3:51</p>
+                        <p class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </p>
+                        <p class="like">
+                          <i class="fa-solid fa-heart"></i>
+                        </p>
+                      </div>
+                      <div class="list">
+                        <p class="number">03</p>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/melon-chart/korea/melon-chart_korea03.jpg"
+                          alt=""
+                        />
+                        <div class="contents">
+                          <p class="rank" style="color: #00d344">
+                            <span><i class="fa-solid fa-arrow-up"></i></span>
+                            <span>+3</span>
+                          </p>
+                          <p class="music-name">사랑은 늘 도망가</p>
+                          <p class="artist">임영웅</p>
+                        </div>
+                        <p class="running-time">4:11</p>
+                        <p class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </p>
+                        <p class="like">
+                          <i class="fa-solid fa-heart"></i>
+                        </p>
+                      </div>
+                      <div class="list">
+                        <p class="number">04</p>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/melon-chart/korea/melon-chart_korea04.jpg"
+                          alt=""
+                        />
+                        <div class="contents">
+                          <p class="rank" style="color: #00d344">
+                            <span><i class="fa-solid fa-arrow-up"></i></span>
+                            <span>+9</span>
+                          </p>
+                          <p class="music-name">ELEVEN</p>
+                          <p class="artist">IVE (일레븐)</p>
+                        </div>
+                        <p class="running-time">3:31</p>
+                        <p class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </p>
+                        <p class="like">
+                          <i class="fa-solid fa-heart"></i>
+                        </p>
+                      </div>
+                      <div class="list">
+                        <p class="number">05</p>
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/melon-chart/korea/melon-chart_korea05.jpg"
+                          alt=""
+                        />
+                        <div class="contents">
+                          <p class="rank" style="color: #00d344">
+                            <span><i class="fa-solid fa-arrow-up"></i></span>
+                            <span>+10</span>
+                          </p>
+                          <p class="music-name">Step Back</p>
+                          <p class="artist">GOT the beat</p>
+                        </div>
+                        <p class="running-time">3:33</p>
+                        <p class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </p>
+                        <p class="like">
+                          <i class="fa-solid fa-heart"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </section>
+            <section id="melon-tv" class="mt-20">
+              <div class="top flex mb-10">
+                <div class="title flex items-center text-white cursor-pointer">
+                  <span class="text-4xl font-bold mr-3">멜론 TV</span>
+                  <span class="text-2xl"
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="contents">
+                <div class="list">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/melon-tv/melontv01.jpg"
+                    alt=""
+                  />
+                  <div class="info">
+                    <p class="music-name">Lovender</p>
+                    <p class="flex justify-between">
+                      <span>한승윤</span>
+                      <span>03:29</span>
+                    </p>
+                  </div>
+                  <button class="play">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+                <div class="list mt-16">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/melon-tv/melontv02.jpg"
+                    alt=""
+                  />
+                  <div class="info">
+                    <p class="music-name">TITLE</p>
+                    <p class="flex justify-between">
+                      <span style="color: #fff">Meghan Trainor</span>
+                      <span style="color: #fff">03:50</span>
+                    </p>
+                  </div>
+                  <button class="play">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+        <!-- 이런 아티스트는 어때요? -->
+        <section id="artist-recommend" class="mt-20">
+          <div class="wrap">
+            <div class="top flex mb-10">
+              <div class="title flex items-center text-white cursor-pointer">
+                <span class="text-4xl font-bold mr-3"
+                  >이런 아티스트는 어때요?</span
+                >
+                <span class="text-2xl"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-recommend/about-melon_artist-recommend_fkj.jpg"
+                    />
+                    <div class="album-info">
+                      <div class="inner">
+                        <button class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                        <div class="more">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info mt-10">
+                      <p>FKJ</p>
+                      <p>Just Piano</p>
+                      <div>
+                        <span>미니(EP)</span>
+                        <span>|</span>
+                        <span>총 8곡</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-recommend/about-melon_artist-recommend_a-tribe-called-quest.jpg"
+                    />
+                    <div class="album-info">
+                      <div class="inner">
+                        <button class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                        <div class="more">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info mt-10">
+                      <p>A Tribe Called Quest</p>
+                      <p>The Love Movement</p>
+                      <div>
+                        <span>정규</span>
+                        <span>|</span>
+                        <span>총 21곡</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-recommend/about-melon_artist-recommend_bts.jpg"
+                    />
+                    <div class="album-info">
+                      <div class="inner">
+                        <button class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                        <div class="more">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info mt-10">
+                      <p>BTS</p>
+                      <p>Butter</p>
+                      <div>
+                        <span>싱글</span>
+                        <span>|</span>
+                        <span>총 5곡</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-recommend/about-melon_artist-recommend_crush.jpg"
+                    />
+                    <div class="album-info">
+                      <div class="inner">
+                        <button class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                        <div class="more">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info mt-10">
+                      <p>Crush (크러쉬)</p>
+                      <p>wonderlost</p>
+                      <div>
+                        <span>미니(EP)</span>
+                        <span>|</span>
+                        <span>총 5곡</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-recommend/about-melon_artist-recommend_paloalto.jpg"
+                    />
+                    <div class="album-info">
+                      <div class="inner">
+                        <button class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                        <div class="more">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info mt-10">
+                      <p>팔로알토 (Paloalto)</p>
+                      <p>Cheers</p>
+                      <div>
+                        <span>미니(EP)</span>
+                        <span>|</span>
+                        <span>총 5곡</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-recommend/about-melon_artist-recommend_peejay.jpg"
+                    />
+                    <div class="album-info">
+                      <div class="inner">
+                        <button class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                        <div class="more">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info mt-10">
+                      <p>Peejay (피제이)</p>
+                      <p>WALKIN' Vol.2</p>
+                      <div>
+                        <span>정규</span>
+                        <span>|</span>
+                        <span>총 10곡</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-recommend/about-melon_artist-recommend_stevie-wonder.jpg"
+                    />
+                    <div class="album-info">
+                      <div class="inner">
+                        <button class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                        <div class="more">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info mt-10">
+                      <p>Stevie Wonder (스티비 원더)</p>
+                      <p>Talking Book</p>
+                      <div>
+                        <span>정규</span>
+                        <span>|</span>
+                        <span>총 10곡</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-recommend/about-melon_artist-recommend_sung-si-kyung.jpg"
+                    />
+                    <div class="album-info">
+                      <div class="inner">
+                        <button class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                        <div class="more">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info mt-10">
+                      <p>성시경</p>
+                      <p>여기, 내 맘속에...</p>
+                      <div>
+                        <span>정규</span>
+                        <span>|</span>
+                        <span>총 11곡</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-recommend/about-melon_artist-recommend_the-controllers.jpg"
+                    />
+                    <div class="album-info">
+                      <div class="inner">
+                        <button class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                        <div class="more">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info mt-10">
+                      <p>The Controllers (더 컨트롤러스)</p>
+                      <p>In Control</p>
+                      <div>
+                        <span>정규</span>
+                        <span>|</span>
+                        <span>총 7곡</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-recommend/about-melon_artist-recommend_urban-zakapa.jpg"
+                    />
+                    <div class="album-info">
+                      <div class="inner">
+                        <button class="play">
+                          <i class="fa-solid fa-play"></i>
+                        </button>
+                        <div class="more">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info mt-10">
+                      <p>어반 자카파 (Urban Zakapa)</p>
+                      <p>[04]</p>
+                      <div>
+                        <span>정규</span>
+                        <span>|</span>
+                        <span>총 9곡</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-navigation">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 한 눈에 보는 트렌드 -->
+        <section id="trend-at-once" class="mt-20">
+          <div class="wrap">
+            <div class="top mb-10">
+              <div class="title flex items-center text-white cursor-pointer">
+                <span class="text-4xl font-bold mr-3">한 눈에 보는 트렌드</span>
+                <span class="text-2xl"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </div>
+            </div>
+            <div class="content flex-grid">
+              <div class="list">
+                <span>프로필 뮤직 인기곡</span>
+                <div class="info flex flex-col">
+                  <div class="mb-4">
+                    <span class="mr-4"># 에픽하이</span>
+                    <span># 염따</span>
+                  </div>
+                  <div class="mb-4">
+                    <span class="mr-4"># SINCE</span>
+                    <span># Meghan Trainor</span>
+                  </div>
+                  <span class="mr-4"># sokodomo</span>
+                </div>
+              </div>
+              <div class="list">
+                <span>해외 록 차트</span>
+                <div class="info flex flex-col">
+                  <div class="mb-4">
+                    <span class="mr-4"># Kelly Clarkson</span>
+                    <span># Sia</span>
+                  </div>
+                  <div class="mb-4">
+                    <span class="mr-4"># Ed Sheeran</span>
+                    <span># Post Malone</span>
+                  </div>
+                  <span class="mr-4"># HONNE</span>
+                </div>
+              </div>
+              <div class="list">
+                <span>HOT TRENDY R&B</span>
+                <div class="info flex flex-col">
+                  <div class="mb-4">
+                    <span class="mr-4"># 김뮤지엄</span>
+                    <span># DeVita</span>
+                  </div>
+                  <div class="mb-4">
+                    <span class="mr-4"># SINCE</span>
+                    <span># 라디(Ra.D)</span>
+                  </div>
+                  <span class="mr-4"># 빈센트블루</span>
+                </div>
+              </div>
+              <div class="list">
+                <span>RISING31</span>
+                <div class="info flex flex-col">
+                  <div class="mb-4">
+                    <span class="mr-4"># 백현</span>
+                    <span># Wanna One</span>
+                  </div>
+                  <div class="mb-4">
+                    <span class="mr-4"># Zion.T</span>
+                    <span># The Chainsmokers</span>
+                  </div>
+                  <span class="mr-4"># TREASURE(트레저)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 아티스트의 음악방송 -->
+        <section id="artist-playlist" class="mt-20">
+          <div class="top flex mb-10">
+            <div class="wrap">
+              <div class="title flex items-center text-white cursor-pointer">
+                <span class="text-4xl font-bold mr-3">아티스트의 음악방송</span>
+                <span class="text-2xl"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="contents">
+            <div class="inner flex items-center">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide flex justify-between">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-playlist/artist-playlist_mockup_naul.png"
+                    />
+                    <div class="text flex flex-col justify-between">
+                      <div class="title">
+                        나얼과 Ecobridge의 <br />
+                        '숫자 2'
+                      </div>
+                      <div class="explain">
+                        여러분들은 숫자 2를 보면 어떤 생각이 떠오르나요? <br />
+                        <br />
+                        나얼과 Eco Bridge가 숫자 2를 키워드로 “지금 들어도 좋은
+                        팝 명곡”들을 골라왔습니다. <br />
+                        1970년대부터 2000년대까지 “팝의 역사”를 관통하는
+                        선곡들을 만나보세요!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide flex justify-between">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-playlist/artist-playlist_mockup_dj-spray.png"
+                    />
+                    <div class="text flex flex-col justify-between">
+                      <div class="title">
+                        내 방을 힙하게 바꿔줄 <br />
+                        DJ SPRAY의 신나는 플레이리스트!
+                      </div>
+                      <div class="explain">
+                        코로나 때문에 밖에서 신나게 흔들지 못해서 아쉽죠? <br />
+                        <br />
+                        래퍼들의 One-Pick DJ, SPRAY가 추천하는 국힙
+                        플레이리스트를 만나보세요!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide flex justify-between">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-playlist/artist-playlist_mockup_yoo.png"
+                    />
+                    <div class="text flex flex-col justify-between">
+                      <div class="title">"다음 겨울에도 여기서 만나"</div>
+                      <div class="explain">
+                        이번 겨울에도 찾아왔어요. 2022 안테나 크리스마스 캐럴
+                        <br />
+                        <br />
+                        감성변태 유희열이 선정 R&B기반의 감성적인 스타일이
+                        돋보이는 팝 발라드. <br />
+                        연말 겨울 분위기를 연상시키는 다양한 사운드와 모두의
+                        행복한 크리스마스를 소망하는 <br />
+                        따뜻한 가사가 담긴 노래들을 만나보세요!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide flex justify-between">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/artist-playlist/artist-playlist_mockup_hyuk-oh.png"
+                    />
+                    <div class="text flex flex-col justify-between">
+                      <div class="title">'이대로 걷다간, 신촌 옆이네'</div>
+                      <div class="explain">
+                        "그냥 노래를 듣다가 가다 보면여기도 보게 되고 저기도
+                        보게 되다가... 이대로 가니깐, 이대로 가다 간, 신촌
+                        옆이더라고요..."<br />
+                        <br />
+
+                        독보적인 색깔의 아티스트 혁오가 영감받은 음악들을 지금
+                        바로 감상해보세요!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-navigation">
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 테마별 음악 추천 -->
+        <section id="theme-music" class="mt-20">
+          <div class="wrap">
+            <div class="top flex mb-10">
+              <div class="title flex items-center text-white cursor-pointer">
+                <span class="text-4xl font-bold mr-3">테마별 음악 추천</span>
+                <span class="text-2xl"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+              </div>
+            </div>
+            <div class="content flex-grid">
+              <div class="list list01">
+                <div class="bg-img"></div>
+                <p class="title">
+                  분위기에 치이고 음색에 치이는 <br />
+                  Cafe 뮤직
+                </p>
+                <p class="user">yulip</p>
+              </div>
+              <div class="list list02">
+                <div class="bg-img"></div>
+                <p class="title">
+                  아이돌이 부르는 <br />
+                  재즈, 보사노바, 스윙
+                </p>
+                <p class="user">김고란</p>
+              </div>
+              <div class="list list03">
+                <div class="bg-img"></div>
+                <p class="title">
+                  봄을 앞둔 지금, <br />
+                  드라이브할 때 듣는 띵곡
+                </p>
+                <p class="user">포도</p>
+              </div>
+              <div class="list list04">
+                <div class="bg-img"></div>
+                <p class="title">
+                  빈티지 무드의 <br />
+                  런던 베이글 카페에서
+                </p>
+                <p class="user">toyou</p>
+              </div>
+              <div class="list list05">
+                <div class="bg-img"></div>
+                <p class="title">
+                  도시의 일상 속 낭만을 담은 <br />
+                  신스팝 모음
+                </p>
+                <p class="user">yulip</p>
+              </div>
+              <div class="list list06">
+                <div class="bg-img"></div>
+                <p class="title">상당히 힙합이야 진짜로 #2</p>
+                <p class="user">midas</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 푸터 -->
+        <footer id="footer" class="mt-40">
+          <div class="wrap">
+            <nav class="top">
+              <ul class="flex">
+                <li>멜론 6.0 둘러보기</li>
+                <li>멜론스튜디오</li>
+                <li>Windows 플레이어</li>
+                <li>Mac 플레이어</li>
+                <li>iPad</li>
+                <li>고객센터</li>
+              </ul>
+            </nav>
+            <nav class="middle">
+              <ul class="flex">
+                <li>이용약관</li>
+                <li>위치기반서비스 이용약관</li>
+                <li>개인정보처리방침</li>
+                <li>청소년보호정책</li>
+                <li>제휴/프로모션문의</li>
+                <li>이메일주소무단수집거부</li>
+                <li>파트너센터</li>
+              </ul>
+            </nav>
+            <div class="bottom">
+              <div class="bottom01">
+                <span>(주)카카오엔터테인먼트</span>
+                <span>경기도 성남시 분당구 판교역로 221</span>
+                <span>대표이사 : 이진수, 김성수</span>
+                <span>사업자등록번호 : 220-88-02594</span>
+                <span>통신판매업신고번호 : 2018-성남분당B-0004</span>
+                <span>사업자정보 확인</span>
+              </div>
+              <div class="bottom02 mt-1">
+                <span>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</span>
+                <span>이메일 : melon_info@kakaoent.com</span>
+                <span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+                <span>Kakao Entertainment Corp.</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+      <!-- 하단 뮤직 플레이어 -->
+      <section id="music-player">
+        <div class="outer-container">
+          <audio
+            src="https://res.cloudinary.com/cbanlawi/video/upload/v1614140796/HarryStyles-WatermelonSugar_f5471p.mp3"
+            id="track"
+          ></audio>
+        </div>
+        <div class="player-container">
+          <img src="" alt="" id="thumbnail" />
+          <div class="box">
+            <div class="bg-img"></div>
+            <div class="track-info">
+              <div id="track-artist">Watermelon Sugar</div>
+              <div id="track-title">Harry Styles</div>
+            </div>
+            <div class="flex-grow"></div>
+            <div class="next-prev">
+              <i class="fas fa-random" id="play-random"></i>
+              <i class="fas fa-step-backward fa-2x" id="prev-track"></i>
+              <div class="play-pause">
+                <i class="far fa-play-circle fa-3x" id="play"></i>
+                <i
+                  class="far fa-pause-circle fa-3x"
+                  id="pause"
+                  style="display: none"
+                ></i>
+              </div>
+              <i class="fas fa-step-forward fa-2x" id="next-track"></i>
+              <i class="fas fa-redo" id="play-repeat"></i>
+            </div>
+            <div class="flex-grow"></div>
+            <div class="progress-bar">
+              <input type="range" id="progressBar" min="0" max="" value="0" />
+            </div>
+            <div class="track-time mr-16">
+              <div id="currentTime"></div>
+              <span style="color: #fff; font-size: 1.2rem; font-weight: bold"
+                >/</span
+              >
+              <div id="durationTime"></div>
+            </div>
+            <div class="icons mr-16">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-volume-down"></i>
+              <i class="fas fa-list"></i>
+            </div>
+          </div>
+        </div>
+        <img
+          src="https://cdn.jsdelivr.net/gh/sungwonje/website-renewal-project_melon_img/docs/main-page/top-menu/main-page_scroll-white.png"
+          alt=""
+          class="scroll-icon"
+        />
+      </section>
+    </section>
+  </body>
+</html>
