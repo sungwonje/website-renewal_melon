@@ -70,13 +70,13 @@ html > body .scrollbar-thumb {
   animation: loading-move 3s infinite;
 }
 @keyframes loading-move {
-  0% {top: 48%;}
-  50% {top: 52%;}
-  100% {top: 48%;}
+  0% {top: 40%;}
+  50% {top: 42%;}
+  100% {top: 40%;}
 }
 #loading .box p {
   position: absolute;
-  bottom: 20px;
+  bottom: -120px;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
