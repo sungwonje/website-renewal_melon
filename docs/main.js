@@ -1,7 +1,7 @@
 console.clear();
 
 // 로딩
-$('html > body').imagesLoaded(function() {
+$('#hot-new-album, #recent-album, #melon-chart-and-melon-tv').imagesLoaded(function() {
   $('#loading').remove();
 });
 
